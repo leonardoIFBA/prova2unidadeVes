@@ -30,7 +30,7 @@ public class ProvaApplication {
             Usuario usuario = new Usuario();
             usuario.setNome("Dr. Carlos Pereira");
             usuario.setEmail("carlos.pereira@example.com");
-            usuarioService.salvar(usuario);
+           
 
             // Criando Tarefas
             Tarefa tarefa1 = new Tarefa();
@@ -39,7 +39,6 @@ public class ProvaApplication {
             tarefa1.setStatus("Em andamento");            
             tarefa1.setUsuario(usuario);
             tarefa1.setProjeto(projeto);
-            tarefaService.salvar(tarefa1);
 
             Tarefa tarefa2 = new Tarefa();
             tarefa2.setTitulo("Implementar a lógica de negócios");
@@ -47,7 +46,6 @@ public class ProvaApplication {
             tarefa2.setStatus("Em andamento");
             tarefa2.setUsuario(usuario);
             tarefa2.setProjeto(projeto);
-            tarefaService.salvar(tarefa2);
 
             System.out.println("Dados inseridos com sucesso!");
         };
